@@ -1,0 +1,314 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: rgb(0, 0, 0);
+}
+
+/* CONTAINER PRINCIPAL */
+#main_container {
+
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#register_container {
+
+    padding: 3rem;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgb(40, 40, 40);
+}
+
+/* CONECTAR COM FACEBOOK */
+#first_box {
+
+    padding: 0 2rem;
+    width: 350px;
+    font-size: 14px;
+}
+#first_box h3 {
+
+    color: rgb(150, 150, 150);
+}
+
+#logo_insta {
+
+    margin: 0 auto 1rem;
+    width: 175px;
+    height: 50px;
+}
+
+#btn_facebook {
+
+    margin: 20px auto;
+    padding: 8px 9px;
+    width: 268px;
+    color: rgb(240, 240, 240);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(56, 152, 255);
+    border: none;
+    border-radius: 8px;
+}
+#btn_facebook i {
+
+    margin-right: 10px;
+    font-size: 18px;
+}
+#btn_facebook:hover {
+
+    cursor: pointer;
+    background-color: rgb(56, 126, 255);
+}
+
+/* SEPARADOR */
+.separator {
+
+    position: relative;
+}
+
+.line {
+
+    margin: 14px auto;
+    width: 268px;
+    border-top: 1px solid rgb(40, 40, 40);
+}
+
+.separator span {
+
+    margin-left: -30px;
+    position: absolute;
+    top: 6px;
+    width: 60px;
+    color: rgb(180, 180, 180);
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: rgb(0, 0, 0);
+}
+
+/* FORM CONTAINER */
+#form_box {
+
+    margin-top: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+#form_box input {
+
+    margin: 3px auto;
+    padding: 10px 6px;
+    width: 268px;
+    color: rgb(240, 240, 240);
+    font-size: 12px;
+    background-color: rgb(20, 20, 20);
+    border: 1px solid rgb(80, 80, 80);
+    border-radius: 3px;
+}
+
+#form_box p {
+
+    margin: 20px auto;
+    width: 268px;
+    color: rgb(180, 180, 180);
+    font-size: 12px;
+}
+
+.link {
+
+    color: rgb(80, 120, 240);
+    cursor: pointer;
+}
+
+#form_box input[type="submit"] {
+
+    opacity: 0.8;
+    color: rgb(240, 240, 240);
+    font-size: 14px;
+    font-weight: bold;
+    background-color: rgb(56, 152, 255);
+    border: none;
+    border-radius: 8px;
+}
+
+/* LOGIN CONTAINER */
+#login_container {
+
+    margin: 10px auto;
+    padding: 1.5rem 0;
+    width: 360px;
+    text-align: center;
+    border: 1px solid rgb(40, 40, 40);
+}
+#login_container p {
+
+    color: rgb(240, 240, 240);
+    font-size: 14px;
+}
+#login_container a {
+
+    color: rgb(56, 152, 255);
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* DOWNLOAD CONTAINER */
+#app_container {
+
+    margin: 10px auto;
+    width: 360px;
+    text-align: center;
+}
+
+#app_container p {
+
+    margin-bottom: 20px;
+    color: rgb(240, 240, 240);
+    font-size: 14px;
+}
+
+#btn_playstore {
+
+    width: 145px;
+    height: 45px;
+}
+
+#btn_microsoft {
+
+    margin-left: 5px;
+    width: 120px;
+    height: 45px;
+}
+
+/* RODAPE */
+footer {
+
+    margin: 50px auto;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer_links {
+
+    list-style: none;
+    display: flex;
+}
+
+#footer_links li {
+
+    margin-right: 14px;
+}
+
+#footer_links a {
+
+    color: rgb(180, 180, 180);
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.copyright {
+
+    margin-top: 20px;
+    display: flex;
+}
+
+.copyright p {
+
+    margin-left: 20px;
+    color: rgb(180, 180, 180);
+    font-size: 12px;
+}
+
+#language {
+
+    color: rgb(180, 180, 180);
+    font-size: 12px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* RESPONSIVIDADE */
+/* MOBILE */
+@media (max-width: 450px) {
+    
+    #main_container {
+
+        margin-top: 0;
+    }
+
+    #register_container,
+    #form_box,
+    #login_container,
+    #app_container {
+
+        width: 100%;
+        border: none;
+    }
+
+    footer {
+
+        width: 90%;
+    }
+
+    #footer_links {
+
+        gap: 5px;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* CELULARES E TABLETS */
+@media (max-width: 768px) {
+    
+    footer {
+
+        width: 90%;
+    }
+
+    #footer_links {
+
+        gap: 5px;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* TABLETS E MINI-LAPTOPS */
+@media (max-width: 992px) {
+    
+    footer {
+
+        width: 90%;
+    }
+
+    #footer_links {
+
+        gap: 5px;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

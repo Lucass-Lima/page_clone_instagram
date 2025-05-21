@@ -1,0 +1,332 @@
+/* GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body {
+
+    background-color: rgb(0, 0, 0);
+}
+
+/* CONTAINERS */
+#main_container {
+
+    display: flex;
+    margin-top: 50px;
+}
+
+#banner_container,
+#form_container {
+
+    flex: 1 1 0;
+    width: 50%;
+}
+
+#banner_container {
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+#banner_container img {
+
+    width: 100%;
+    max-width: 380px;
+    margin-top: 25px;
+    margin-right: 50px;    
+}
+
+#form_container {
+
+    margin-top: 3rem;
+    text-align: center;
+}
+
+/* LOGIN FORM */
+#form_box {
+
+    margin-top: 30px;
+    width: 350px;
+}
+
+#logo_insta {
+
+    width: 175px;
+    height: 51px;
+    margin: 30px auto 12px;
+}
+
+#login_form {
+
+    margin-top: 10px;
+}
+
+#login_form input {
+
+    margin: 5px auto;
+    padding: 12px 9px;
+    width: 268px;
+    color: rgb(245, 245, 245);
+    font-size: 12px;
+    display: block;
+    background-color: rgb(20, 20, 20);
+    border: 1px solid rgb(130, 130, 130);
+    border-radius: 3px;
+}
+
+#login_form input[type="submit"] {
+
+    opacity: 0.8;
+    margin-top: 15px;
+    padding: 0;
+    color: rgb(245, 245, 245);
+    font-size: 13px;
+    font-weight: bold;
+    height: 30px;
+    background-color: rgb(40, 133, 238);
+    border: none;
+    border-radius: 5px;
+}
+
+/* SEPARADOR */
+.separator {
+
+    position: relative;
+}
+
+.line {
+
+    margin: 25px auto 35px;
+    width: 268px;
+    border-top: 1px solid rgb(40, 40, 40);
+}
+
+.separator span {
+
+    margin-left: -25px;
+    position: absolute;
+    top: -6px;
+    width: 50px;
+    color: rgb(190, 190, 190);
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color: rgb(0, 0, 0);
+}
+
+/* FACEBOOK LOGIN */
+#facebook_login {
+
+    margin-bottom: 30px;
+}
+
+#facebook_login a {
+
+    color: rgb(40, 100, 240);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#facebook_login i {
+
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+#facebook_login span {
+
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 1px;
+}
+
+/* ESQUECEU SENHA */
+#forgot_password {
+
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+#forgot_password a {
+    
+    color: rgb(210, 210, 210);
+    text-decoration: none;
+}
+
+/* REGISTRO */
+#register_container {
+
+    margin-top: 10px;
+    padding: 25px;
+    width: 350px;
+    background-color: rgb(0, 0, 0);
+    border: none
+}
+
+#register_container p {
+
+    color: rgb(245, 245, 245);
+    font-size: 14px;
+}
+
+#register_container a {
+
+    color: rgb(10, 100, 255);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* RODAPE */
+footer {
+
+    margin: 50px auto;
+    width: 1000px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer #footer_links {
+
+    display: flex;
+    list-style: none;
+}
+
+#footer_links li {
+
+    margin-right: 10px;
+}
+
+#footer_links a{
+
+    color: rgb(130, 130, 130);
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.copyright {
+
+    margin-top: 20px;
+    display: flex;
+}
+
+.copyright p {
+
+    margin-left: 20px;
+    color: rgb(130, 130, 130);
+    font-size: 12px;
+}
+
+#language {
+
+    color: rgb(130, 130, 130);
+    font-size: 12px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 450px) {
+
+    #banner_container {
+
+        display: none;
+    }
+
+    #main_container,
+    #form_box {
+
+        margin-top: 0;
+    }
+
+    #form_container,
+    #form_box,
+    #register_container,
+    #app_container {
+
+        width: 100%;
+        border: none;
+    }
+
+    footer {
+
+        width: 90%;
+    }
+
+    #footer_links {
+
+        gap: 5px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* CELULARES E TABLETS */
+@media (max-width: 768px) {
+
+    #banner_container {
+
+        display: none;
+    }
+
+    #form_container {
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    footer {
+
+        width: 90%;
+    }
+
+    #footer_links {
+
+        gap: 5px;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* TABLETS E MINI-LAPTOPS */
+@media (max-width: 992px) {
+
+    #banner_container {
+
+        display: none;
+    }
+
+    #form_container {
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer {
+
+        width: 90%;
+    }
+
+    #footer_links {
+
+        gap: 5px;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
